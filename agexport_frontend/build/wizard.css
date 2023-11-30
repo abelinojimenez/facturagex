@@ -1,0 +1,139 @@
+.step {
+    list-style: none;
+    margin: .2rem 0;
+    width: 100%;
+  }
+  
+  .step .step-item {
+    -ms-flex: 1 1 0;
+    flex: 1 1 0;
+    margin-top: 0;
+    min-height: 1rem;
+    position: relative; 
+    text-align: center;
+  }
+  
+  .step .step-item:not(:first-child)::before {
+    background: #0069d9;
+    content: "";
+    height: 2px;
+    left: -50%;
+    position: absolute;
+    top: 9px;
+    width: 100%;
+  }
+  
+  .step .step-item a {
+    color: #acb3c2;
+    display: inline-block;
+    padding: 20px 10px 0;
+    text-decoration: none;
+  }
+  
+  .step .step-item a::before {
+    background: #0069d9;
+    border: .1rem solid #fff;
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: .9rem;
+    left: 50%;
+    position: absolute;
+    top: .2rem;
+    transform: translateX(-50%);
+    width: .9rem;
+    z-index: 1;
+  }
+  
+  .step .step-item.active a::before {
+    background: #fff;
+    border: .1rem solid #0069d9;
+  }
+  
+  .step .step-item.active ~ .step-item::before {
+    background: #e7e9ed;
+  }
+  
+  .step .step-item.active ~ .step-item a::before {
+    background: #e7e9ed;
+  }
+
+
+
+  /*-----*/
+  /* Copy this code in your css file. */
+
+
+
+  
+.profilecard
+{
+    width: 500px;
+    margin: 20px auto;
+}
+
+.preview
+{
+  
+    padding: 10px ;
+    position: relative ;
+}
+
+.preview i
+{
+    color: white;
+    font-size: 35px;
+    transform: translate(50px,130px);
+}
+
+.preview-img
+{
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.7);
+}
+
+.browse-button
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    position: absolute; /* Tweak the position property if the element seems to be unfit */
+    top: 10px;
+    background: linear-gradient(180deg, transparent, black);
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.browse-button:hover
+{
+    opacity: 1;
+}
+
+.browse-input
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    transform: translate(-1px,-26px);
+    opacity: 0;
+}
+
+
+.form-group input:focus
+{
+    border: 1px solid crimson;
+    box-shadow: 0 0 0 0;
+}
+
+.Error
+{
+    color: crimson;
+    font-size: 13px;
+}
+
+.Back
+{
+    font-size: 25px;
+}
